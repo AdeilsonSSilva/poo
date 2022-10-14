@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Copa do Mundo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+      //  let ano=prompt("Digite um ano");
+      for(let ano = 1900; ano<=2030;ano++){ 
+      if(ano<1930)
+             document.write(ano + " Não hove copa antes de 1930" + "<br>")
+             else if((ano-1930) % 4!=0)
+             document.write("Não teve copa");
+        else if(ano>1930 || ano<2022){
+            for(var copa=; copa<2022; copa+=4){
+            document.write(copa + "<br>");
+                if(ano>copa)
+                document.write("Opa, teve copa");
+            else
+                document.write("Tururu, não teve copa"); break;
+         }
+            }else
+                document.write("Não sabemos se haverá copa");
+        }
+    </script>
+</body>
+</html>
